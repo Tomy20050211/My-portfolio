@@ -1,0 +1,127 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(./assets/fondo-body.avif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header{
+    display: flex;
+  
+    flex-direction: column;
+    align-items: center;
+}
+
+
+header img{
+    border-radius: 50%;
+    width: 300px;
+    padding-top: 5rem;
+    animation: flotar 3s ease-in-out infinite;
+    
+}
+
+@keyframes flotar{
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-10px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+.profile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main section{
+    background: rgba(255, 255, 255, .3);
+    backdrop-filter: blur(5px);
+   border: 1.5px solid rgba(209, 213, 219, 0.3);
+    border-color: rgba(255, 255, 255, 0.725);
+        transition: all 0.3s ease-in-out;
+
+  
+}
+
+.description h1, h2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+
+}
+.profile h2{
+    color: rgb(2, 2, 76);
+}
+.description{
+    width: 70rem;
+  height: auto;
+  padding: 2rem;
+  border-radius: 1rem;
+
+   
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    padding-top: 3rem;
+}
+
+.technologies-experience {
+    width: 70rem;
+    height: auto;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.technologies picture {
+  display: flex;          
+  flex-direction: row;    
+  gap: 1rem;             
+  justify-content: center; 
+  align-items: center;    
+}
+
+.technologies-experience h1{
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+}
+.technologies img {
+    padding-top: 3rem;
+  width: 200px;
+     transition: transform 0.5s ease-in-out;
+}
+
+  main section{
+      background: linear-gradient(315deg, #ffffff4e 50%, #2d2b5390 50%);
+      background-size: 200% 200%;
+      background-position: bottom right;
+      color: black;
+      transition: background-position 0.5s ease, color 0.5s ease;
+    }
+
+    main section:hover {
+      background-position: top left;
+      color: white;
+      
+    }
+.technologies img:hover {
+     transform: rotate(10deg);
+ 
+}
